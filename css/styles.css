@@ -24,13 +24,17 @@ a {
     text-decoration: none;
 }
 
+.img {
+ display: block;
+ width: 100%;
+}
+
 .container {
  width: 100%;
  max-width: 1158px;
  padding: 0 15px;
  margin: 0 auto;
 }
-
 
 /*HEADER*/
 .header {
@@ -61,7 +65,7 @@ display: block;
  line-height: 1.17; 
  letter-spacing: 0.03em;
  text-transform: uppercase;
- margin-left: 76px;
+ margin-right: 76px;
  display: flex;
  align-items: center;  
 }
@@ -122,14 +126,16 @@ gap: 40px;
 /*HERO*/
 
 .hero-container{
-background-color:  #2E2F42; 
 display: flex;
 flex-direction: column;
 align-items: center;
 }
 
 .hero {
-
+    background-color: #2E2F42;
+    width: 100%;
+    height: 600px;
+    padding: 188px 0;
 }
 
 .hero-title {
@@ -140,7 +146,7 @@ font-weight: 700;
 line-height: 1.07; 
 letter-spacing: 0.02em;
 max-width: 496px;
-margin-top: 188px;
+margin: 0 auto 48px;
 }
 
 .hero-btn {
@@ -155,11 +161,12 @@ text-align: center;
 cursor: pointer;
 height: 56px;
 border: none;
-border-radius: 4px;
 padding: 16px 32px;
-margin-top: 48px;
-margin-bottom: 188px;
+margin: 0 auto;
 display: block;
+min-width: 169px;
+border-radius: 4px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn:hover,
@@ -200,6 +207,7 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.20; 
 letter-spacing: 0.02em;
+margin-bottom: 8px;
 }
 
 .benefits-item-text {
@@ -310,6 +318,7 @@ padding: 32px 0px;
  line-height: 1.20; /* 120% */
  letter-spacing: 0.02em;
  background-color:#FFFFFF;
+ margin-bottom: 8px;
 }
 .portfolio-project-using {
 color: #434455;
