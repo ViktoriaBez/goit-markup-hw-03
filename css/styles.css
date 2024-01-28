@@ -1,6 +1,5 @@
 body{
     font-family: "Roboto", sans-serif;
-    color: #434455;
     background-color: #FFFFFF;
     max-width: 1440px;
     width: 100%;
@@ -45,7 +44,6 @@ img {
 /*HEADER*/
 .header {
  border-bottom: 1px solid #E7E9FC;
- background: #FFF;
 }
 
 .header-container {
@@ -58,8 +56,8 @@ img {
  align-items: center; 
 }
 
-.header-menu-item {
-color: #2e2f42;
+.header-nav-item {
+color: #2E2F42;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -67,7 +65,9 @@ letter-spacing: 0.02em;
 padding: 24px 0;
 display: block;
 }
+
 /* logo*/
+
 .header-logo-web {
  color:#4D5AE5;
  font-family: "Raleway", sans-serif;
@@ -83,9 +83,8 @@ display: block;
  color:#2E2F42; 
 }
 
-.header-menu-link:hover,
-.header-menu-link:focus,
-.header-menu-link:active {
+.header-nav-item:hover,
+.header-nav-item:focus {
 color: #404bbf;
 }
 
@@ -96,7 +95,7 @@ font-style: normal;
 margin-left: auto;
 }
 
-.header-menu-list {
+.header-nav-list {
 display: flex;
 gap: 40px;
 }
@@ -287,26 +286,18 @@ padding: 32px 0px;
 .portfolio-item {
  display: flex;
  flex-wrap: wrap;
- row-gap: 48px;
- column-gap: 24px;    
+ gap: 48px 24px;   
 }
 
 .portfolio-list {
  width: calc((100% - 48px) / 3);
- flex-shrink: 0;
- border: 1px solid #E7E9FC;    
+ border-top: none;  
 }
 
 .portfolio-text {
- display: flex;
  padding: 32px 16px;
- flex-direction: column;
- justify-content: center;
- align-items: flex-start;
- gap: 8px;
  border: 1px solid #E7E9FC;
- border-top: none;
- align-self: stretch;  
+ border-top: none; 
 }
 
 .portfolio-project-name {
@@ -315,9 +306,9 @@ padding: 32px 0px;
  font-weight: 500;
  line-height: 1.20; /* 120% */
  letter-spacing: 0.02em;
- background-color:#FFFFFF;
  margin-bottom: 8px;
 }
+
 .portfolio-project-using {
 color: #434455;
 font-size: 16px;
